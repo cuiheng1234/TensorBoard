@@ -161,7 +161,8 @@ def add_pr_curve_tensorboard(class_index, test_probs, test_label, global_step=0)
                         tensorboard_truth,
                         tensorboard_probs,
                         global_step=global_step)
-    writer.close()
+
+writer.close()
 
 # plot all the pr curves
 for i in range(len(classes)):
